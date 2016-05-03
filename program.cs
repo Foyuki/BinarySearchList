@@ -64,7 +64,11 @@ namespace ovning14._1_BinarSokning
                 }
                 if (m != position)
                 {
-                    int temp = list[m].Personnummer;
+				 	Person temp = list[m];	
+					list [m] = list [position];               
+					list[position] = temp; 
+
+
                 }
             }
             //För att testa att sorteringen fungerar
